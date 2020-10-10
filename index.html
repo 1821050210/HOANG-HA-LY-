@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" 
+      content="width=device-width, initial-scale=1"> 
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family:Arial;
+  padding: 10px;
+  background: #e9d8f4;
+}
+h2{
+  border: 2px  solid #e9d8f4;
+  border-radius: 9px;
+  width: 40%;
+  height: 20%;
+  text-align: center;
+  padding-top: 5px;
+}
+h4{
+  padding-left: 20px ;
+}
+.header {
+  padding: 10px;
+  text-align: center;
+  background: white;
+  color: #58257b;
+  background-image: url(https://i1-kinhdoanh.vnecdn.net/2020/10/05/1000x1-1601888082-5208-1601888127.jpg?w=220&h=132&q=100&dpr=1&fit=crop&s=dbCeH30SiIVDWIcTZr56bA);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.header h1 {
+  font-size: 25px;
+  text-align: left;
+  margin-left: 25px;
+}
+
+.header p {
+  font-size: 20px;
+}
+.topnav {
+  overflow: hidden;
+  background-color: #58257b;
+}
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+.topnav a:hover {
+  background-color: #db7093;
+  color: white;
+}
+.leftcolumn { 
+  float: left;
+  width:25% ;
+  background-color: #e9d8f4;
+  padding-left: 5px;
+  margin-top: 5px;
+  padding-bottom: 5px;
+}
+.centercolumn {
+  float: left;
+  width: 50%;
+  background-color: #e9d8f4;
+  padding-left: 5px;
+  margin-top: 5px;
+  padding-bottom: 5px;
+}
+.rightcolumn {
+  float: left;
+  width: 25%;
+  background-color: #e9d8f4;
+  padding-left: 5px;
+  margin-top: 5px;
+  padding-bottom: 5px;
+}
+.fakeimg {
+  background-color: #baa1cc;
+  width: 100%;
+  padding: 20px;
+  margin-top: 5px;
+}
+.card {
+  background-color: white;
+  padding: 20px;
+  margin-top: 5px;
+}
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.footer {
+  padding: 10px;
+  text-align: center;
+  background: white;
+  margin-top: 5px;
+  padding-left :25px;
+}
+@media screen and (max-width: 700px) {
+  .leftcolumn, .rightcolumn { 
+    width: 100%;
+    padding: 0;
+  }
+}
+@media screen and (max-width: 300px) {
+  .topnav a {
+    float: none;
+    width: 100%;
+  }
+}
+</style>
+<script type="text/javascript">//khai báo  ngày tháng  hiện tại //
+      d= new Date ();
+      months = new Array ("Một","Hai","Ba","Tư","Năm","Sáu","Bảy","Tám","Chín","Mười","Mười Một","Mười Hai");
+      days = new Array ("Một","Hai","Ba","Tư","Năm","Sáu","Bảy","Tám","Chín","Mười","Mười Một","Mười Hai");
+      document.write ("<br> Hôm nay là thứ ")
+      document.write(days[d.getDay()]+" ,ngày "+d.getDate()+" tháng "+months[d.getMonth()] +" năm "+d.getFullYear());
+      document.write("<br>");
+</script>
+</head>
+<body>
+
+<div class="header">
+  <marquee direction="left" scrollamount=10>
+  <h1><i>VNEXPRESS</i></h1>
+  <p>Trang thông tin điện tử</p>
+  </marquee>
+</div>
+
+<div class="topnav">
+  <a href="#">Trang chủ</a>
+  <a href="">Tin tức</a>
+  <a href="#">Góc nhìn</a>
+  <a href="#">Thế giới</a>
+  <a href="#">Kinh doanh</a>
+  <a href="#">Giải trí</a>
+  <a href="#">Thể thao</a>
+  <a href="#">Pháp luật</a>
+  <a href="#" style="float:right">Đăng nhập</a>
+  <a href="#" style="float:right">Tất cả</a>
+</div>
+
+<div class="row">
+  <div class="leftcolumn">
+    <div class="card">
+      <h2>Tin tức</h2>
+      <img src="5.jpg">
+      <h3> Bên trong Bến xe miền Đông mới </h3>
+      <p>TP HCM - Ba ngày trước khi hoạt động , các hạng mục như sảnh chờ , quầy bán vé , nhà gửi xe ... của Bến xe miền Đông mới đã hoàn thiện</p>
+    </div>
+    <div class="card">
+      <img src="6.jpg">
+      <h3>Đi bằng đôi chân mình</h3>
+      <p>Suốt 10 năm, Ngô Văn Hiếu cõng người bạn khuyết tật đến lớp mỗi ngày bất kể nắng mưa. Ước mơ của em là đỗ Đại học Y Hà Nội.</p>
+    </div>
+    <div class="card">
+      <img src="7.jpg">
+      <h3>Biden nới cách biệt sau khi Trump nhiễm nCoV</h3>
+      <p>Kết quả thăm dò cho thấy cách biệt trong tỷ lệ ủng hộ giữa Biden và Trump tăng từ 5 lên 21 điểm sau khi Tổng thống nhiễm nCoV.</p>
+    </div>
+    <div class="card">
+    <img src="4.jpg">
+    <h3>Đường bích họa dài nhất thủ đô</h3>
+    <p>Hơn 100 bức họa nối dài 2,2km gắn với văn hóa và lịch sử được vẽ trên dọc đường đê quốc lộ 32 , qua huyện phúc thọ .</p>
+    </div>
+    <div class="card">
+    <img src="y.jpg" width="75%">
+    <h3>Quần thể nhà liên kết và biệt thự cao cấp của Khang Điềm </h3>
+    <p>Verosa Park  pháp lí minh bạch . Sở hữu lâu dài nhà đất , sổ hồng .Ngôi nhà để đời cho tế hệ sau </p>
+    </div> 
+    <div class="card">
+    <img src="bv.jpg" width="60%">
+    <p>Khu nghỉ dưỡng núi Ba Vì nhiều giải quốc tế </p>
+    </div>  
+  </div>
+
+  <div class="centercolumn">
+    <div  class ="card">
+    <h2><i>Góc nhìn</i></h2>
+    <h3>"Tốt"và"Tuyệt vời"</h3>
+    <p>Mẹ tôi vui sướng khi nhận được giấy chủ quyền đất sau thời gian dài chờ đợi , và phát hiện ra giới tính của mình bà đã chuyển từ "bà" sang "tôi".</p>
+    </div>
+    <div  class ="card">
+    <h3>Quyền lực mềm</h3>
+    <p>Ở Việt Nam, đi nhậu với sếp, nhân viên hay trả tiền. Nhưng khi tôi qua Mỹ, người trả tiền thường là sếp.</p>
+    </div>
+    <div  class ="card">
+    <h3>Thời điểm thích hợp chữa bệnh mất ngủ </h3>
+    <p>Tưởng là sẽ bị mất ngủ cả đời vậy mà mọi thứ đã thay đổi và đây là bí quyết ...</p>
+    </div>
+    <div  class ="card">
+    <h3>Phạm Băng Băng đóng phim hành động Hollywood </h3>
+    <p>Phạm Băng Băng vào vai một trong năm nữ diễn điệp viên của "The 365", cùng các sao Hollywood như Jessica Chastain , Lupita Nyong'o.</p>
+    </div>
+    <div  class ="card">
+    <h3>Các thủ khoa lựa chọn đại học nào ?</h3>
+    <p>Hai thủ khoa khối A00 chọn ngành Khoa học máy tính ,Đại học Bách Khoa Hà Nội , thủ khoa D01 học Ngoại thương , còn thủ khoa B00 chọn Y dược TP HCM </p>
+    </div>
+    <div  class ="card">
+    <h3>Bí quyết "vàng" cho người bị mất ngủ , lo âu , trầm cảm </h3>
+    <p>Ngủ ngon sâu giấc 1 mạch từ tối đến sáng một mạch , tỉnh dậy tinh thần thoải mái</p>
+    </div>
+    <div  class ="card">
+    <h3>Quỹ bảo trợ trẻ em Việt Nam gặp mặt học sinh dân tộc thiểu số </h3>
+    <p>Quỹ bảo trợ trẻ em Việt Nam tổ chức gặp mặt trẻ em dân tộc Đan lai và trẻ em vùng dân tộc thiểu số có hoàn cảnh khó khăn vào ngày 3-4/10 , tại thị xã Cửa Lò .</p>
+    </div>
+    <div class="card">
+    <h3>Bộ Giáo Dục và Đào Tạo có thứ trưởng mới</h3>
+    <p>Ông Hoàng Minh Sơn , Chủ Tịch Hội đồng trường Đại học Bách Khoa Hà Nội , được Thủ tướng bổ nhiệm làm Thứ Trưởng Giáo Dục và Đào Tạo</p>
+    </div>
+    <div class="card">
+    <h3>Tin tức 24h mới nhất hôm nay 16/ 08 | Cập nhật covid-19 hôm nay hi vọng từ huyết tương</h3>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/rmSaBr2b-zE" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+    <div class="card">
+    <h3>Nổi bật</h3>
+    <img src="6dt.jpg" width="48%" right="50%">
+    <img src="ntks.jpg" width="48%" right="50%">
+    </div>
+  </div>
+
+  <div class="rightcolumn">
+    <div class="card">
+      <h3>Kinh doanh</h3>
+      <img src="8.jpg ">
+      <h3>Giá thuê đất  công nghiệp tăng vọt</h3>
+      <p>Giữa đợt Covid-19 thứ hai, giá thuê đất khu công nghiệp tại TP HCM, Bình Dương, Đồng Nai, Long An leo thang 20-30% so với cùng kỳ.</p>
+    </div>
+    <div class="card">
+      <h3>Thể thao</h3>
+      <img src="9.jpg" right="37%">
+      <h3>Đức vuột chiến thắng ở phút 94</h3>
+      <p>Ba lần dẫn bàn , nhưng tuyển tủ Đức vẫn bị Thổ Nhĩ Kì cầm hòa 3-3 trong trong trận giao hữu tại Cologne hôm 7/10</p>
+    </div>
+    <div class="card">
+      <h3>Giải trí</h3>
+      <img src="ab.jpg">
+      <h3>Trương Hồ Phương Nga làm mẫu ảnh</h3>
+      <p>Trương Hồ Phương Nga là người mẫu ảnh kì miện 10 năm kàm nghề của nhà thiết kế Đức Vincie</p>
+    </div>
+    <div class="card">
+      <img src="he.jpg">
+      <h3>H'Hen Niê chia tay bạn trai</h3>
+      <p>Hoa hậu H'Hen Niê cho biết cô đã chia tay mối tình đầu sau gần hai năm hẹn hò , sáng 6/10</p>
+    </div>
+    <div class="card">
+    <img src="ya.jpg" right="65%">
+    <h3>Chiếc xe đầu tiên chở người chạy trên Mặt Trăng</h3>
+    <p>Lunar Roving Vehicle (LRV),chiếc xe có thể gấp gọn với 4 bánh thiết kế độc đáo ,làm nên lịch sử khi chạy trên Mặt Trăng.</p>
+    </div>
+  </div>
+<div class="footer">
+  <p><i>Được viết bởi :Hoàng Hà Ly</i></p>
+  <p><i>Địa chỉ: số 41 phố Viên _Bắc Từ Liêm _Hà Nội <br> Liên hệ qua email :hoangly112k@gmail.com</i></p>
+</div>
+
+</body>
+</html>
